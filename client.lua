@@ -15,7 +15,7 @@ local Buton, RandomDescription = true, true
 
 CreateThread(function()
     while true do
-        SetDiscordAppId() -- Bot application id
+        SetDiscordAppId('') -- Bot application id
         SetDiscordRichPresenceAsset('BigLogo') -- Discord developer portal içerisinde bu isimde logo olması gerekmekte
         SetDiscordRichPresenceAssetText('Big Logo Text') -- Mouse ile büyük logo üzerinde geldiğinde ne yazmasını istiyorsanız 
         SetDiscordRichPresenceAssetSmall('MiniLogo') -- Discord developer portal içerisinde bu isimde logo olması gerekmekte
