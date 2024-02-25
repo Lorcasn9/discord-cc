@@ -22,7 +22,7 @@ CreateThread(function()
         SetDiscordRichPresenceAssetSmallText('Mini Logo Text') -- Mouse ile küçük logo üzerinde geldiğinde ne yazmasını istiyorsanız
 
         if RandomDescription then
-            SetRichPresence(Descriptions[math.random(#Descriptions)]..' | '#GetActivePlayers() .. '/128')
+            SetRichPresence(Descriptions[math.random(#Descriptions)]..' | ' .. #GetActivePlayers() .. '/128')
         else
             SetRichPresence(#GetActivePlayers() .. '/128')
         end
